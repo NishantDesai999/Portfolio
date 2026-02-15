@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Desai | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">ND<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Nishant <span class="accent">Desai</span></h1>
+      <p class="hero-title"><span class="typed-text" id="typed"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">Senior Software Engineer with 4+ years of experience building scalable backend systems, leading teams, and driving performance optimizations at Protium Finance.</p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View My Experience</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/NishantDesai999" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nishant-desai-13222a12a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:desainishant96@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">nishant.js</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="fn">engineer</span> = {
+  <span class="key">name</span>: <span class="str">"Nishant Desai"</span>,
+  <span class="key">role</span>: <span class="str">"Sr. Software Engineer"</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>,
+    <span class="str">"PostgreSQL"</span>, <span class="str">"AWS"</span>
+  ],
+  <span class="key">passion</span>: <span class="str">"Building scalable systems"</span>,
+  <span class="key">available</span>: <span class="bool">true</span>
+};</code></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <div class="initials-avatar">ND</div>
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-circle-check"></i>
+            <span>Open to opportunities</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a <strong>Senior Software Engineer</strong> at Protium Finance Limited with 4+ years of experience designing and building scalable backend systems. I specialize in Java, Spring Boot, PostgreSQL, and AWS, with a focus on performance optimization, system design, and team leadership.</p>
+          <p>I hold a Bachelor's degree in Information & Technology from GTU (9 CPI) and am an Oracle Certified Expert in Java EE 6 Web Components and Oracle Certified Professional in Java SE6. Outside of work, I enjoy swimming, running, cycling, and following finance.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Oracle Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Team Members Led</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Software Engineer (Sr. Associate)</h3>
+                <span class="timeline-company">Protium Finance Limited</span>
+              </div>
+              <span class="timeline-date">May 2024 - Present</span>
+            </div>
+            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+            <ul>
+              <li>Leading a team of 4 members</li>
+              <li>Managing projects, engaging in requirement discussions</li>
+              <li>System design and API design</li>
+              <li>Coordinating with stakeholders, mentoring team members, ensuring code quality, promoting effective communication, addressing project risks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Software Engineer (Associate)</h3>
+                <span class="timeline-company">Protium Finance Limited</span>
+              </div>
+              <span class="timeline-date">July 2023 - May 2024</span>
+            </div>
+            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+            <ul>
+              <li>Designed scalable systems considering API and database query latencies (p95, p99)</li>
+              <li>Used JIRA for project management and SDLC</li>
+              <li>Configured system monitoring and alerts using AWS CloudWatch & OpsGenie</li>
+              <li>Used RDS, EC2 insights and tuned resources to ensure system uptime</li>
+              <li>Gathering requirements and driving third-party integrations</li>
+              <li>Used AWS CDK for IaC (Infrastructure as Code)</li>
+              <li>Code reviews and mentoring juniors to follow best practices of developing REST APIs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer (Sr. Analyst)</h3>
+                <span class="timeline-company">Protium Finance Limited</span>
+              </div>
+              <span class="timeline-date">May 2022 - July 2023</span>
+            </div>
+            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+            <ul>
+              <li>Improved throughput of the Camunda BPMN</li>
+              <li>Performance testing and enhancements across all core services to handle 3x traffic</li>
+              <li>Used RDS Insights to identify slow DB queries and improved query performance</li>
+              <li>Decreased API latencies, making systems leverage horizontal scaling</li>
+              <li>Designed Kibana and Metabase Dashboards for business and tech team monitoring</li>
+              <li>Mentored juniors and helped them solve problems</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Engineer (Jr. Analyst)</h3>
+                <span class="timeline-company">Protium Finance Limited</span>
+              </div>
+              <span class="timeline-date">July 2020 - May 2022</span>
+            </div>
+            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+            <ul>
+              <li>Worked as Full Stack Dev stabilising existing product journey using ReactJs, Spring MVC and MSSQL</li>
+              <li>Joined the core/platform team and helped build core services used across the organisation</li>
+              <li>Followed best practices of SDLC, API design, DB design and Horizontal Scalability</li>
+              <li>Designed systems to leverage AWS offerings like SQS, SNS, SES, and S3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Intern</h3>
+                <span class="timeline-company">Protium Finance Limited</span>
+              </div>
+              <span class="timeline-date">May 2020 - July 2020</span>
+            </div>
+            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</span>
+            <ul>
+              <li>Designed & Developed a web portal in ReactJs backed by NodeJs & MongoDB</li>
+              <li>Worked on Spring Boot, AWS Lambda to make API wrappers</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-star"></i> Proficient</h3>
+          <div class="skill-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Camunda BPMN</span>
+            <span class="tag">ELK</span>
+            <span class="tag">Metabase</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-cloud"></i> AWS & DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">SQS</span>
+            <span class="tag">SNS</span>
+            <span class="tag">SES</span>
+            <span class="tag">S3</span>
+            <span class="tag">EC2</span>
+            <span class="tag">RDS</span>
+            <span class="tag">CloudWatch</span>
+            <span class="tag">AWS CDK</span>
+            <span class="tag">Lambda</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-bar"></i> Monitoring & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Kibana</span>
+            <span class="tag">OpsGenie</span>
+            <span class="tag">JIRA</span>
+            <span class="tag">Git</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-seedling"></i> Familiar</h3>
+          <div class="skill-tags">
+            <span class="tag">ReactJs</span>
+            <span class="tag">Android</span>
+            <span class="tag">NodeJs</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Spring MVC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-road"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Marg Sahayak</h3>
+          <p>Road Grievance Redressal System for the Government of Gujarat, managing 18,000 complaints in just three days. Implemented in SDC and 33 districts. Runner up at Smart Gujarat Hackathon-2018, Winner at Synergy 2019 (IEEE), showcased at the World Bank and SSIP conference.</p>
+          <div class="project-tech">
+            <span>Web Development</span><span>Government</span><span>Team of 4</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-cogs"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Core Platform Services</h3>
+          <p>Built core services used across the organisation at Protium Finance, following best practices of SDLC, API design, DB design and Horizontal Scalability. Leveraged AWS SQS, SNS, SES, and S3.</p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Performance Optimization</h3>
+          <p>Improved Camunda BPMN throughput and performed performance enhancements across all core services to handle 3x traffic. Identified slow DB queries via RDS Insights and decreased API latencies with horizontal scaling.</p>
+          <div class="project-tech">
+            <span>Camunda BPMN</span><span>RDS</span><span>Performance Testing</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Monitoring Dashboards</h3>
+          <p>Designed Kibana and Metabase Dashboards to help businesses and the tech team monitor systems. Configured system monitoring and alerts using AWS CloudWatch & OpsGenie.</p>
+          <div class="project-tech">
+            <span>Kibana</span><span>Metabase</span><span>CloudWatch</span><span>OpsGenie</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>MoodCafe</h3>
+          <p>IIM-Ahmedabad mental health startup. Worked as an Android developer to enhance the existing application during internship.</p>
+          <div class="project-tech">
+            <span>Android</span><span>IIM-A Startup</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-code"></i></div>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3>Web Portal</h3>
+          <p>Designed & Developed a web portal in ReactJs backed by NodeJs & MongoDB during internship at Protium Finance. Also worked on Spring Boot and AWS Lambda API wrappers.</p>
+          <div class="project-tech">
+            <span>ReactJs</span><span>NodeJs</span><span>MongoDB</span><span>AWS Lambda</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss an idea, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:desainishant96@gmail.com">desainishant96@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/NishantDesai999" target="_blank" rel="noopener">github.com/NishantDesai999</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/nishant-desai-13222a12a/" target="_blank" rel="noopener">linkedin.com/in/nishant-desai-13222a12a</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+919512363840">9512363840</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <span class="accent">Nishant Desai</span></p>
+      <p class="footer-sub">© 2025 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
