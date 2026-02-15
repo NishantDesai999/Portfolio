@@ -41,11 +41,11 @@ navLinks.querySelectorAll('a').forEach(link => {
 // TYPED TEXT EFFECT
 // =============================================
 const roles = [
-  'Full Stack Developer',
-  'React Enthusiast',
-  'Node.js Developer',
-  'Problem Solver',
-  'Open Source Contributor'
+  'Senior Software Engineer',
+  'Backend Systems Architect',
+  'Java & Spring Boot Developer',
+  'Team Lead',
+  'Performance Optimizer'
 ];
 
 let roleIndex = 0;
@@ -83,7 +83,7 @@ type();
 // SCROLL REVEAL ANIMATION
 // =============================================
 const revealElements = document.querySelectorAll(
-  '.skill-category, .project-card, .about-grid, .contact-grid, .section-header'
+  '.skill-category, .project-card, .about-grid, .contact-grid, .section-header, .timeline-item'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
