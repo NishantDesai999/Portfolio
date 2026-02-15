@@ -83,7 +83,7 @@ type();
 // SCROLL REVEAL ANIMATION
 // =============================================
 const revealElements = document.querySelectorAll(
-  '.skill-category, .project-card, .about-grid, .contact-grid, .section-header, .timeline-item'
+  '.skill-category, .project-card, .about-grid, .contact-grid, .section-header, .timeline-item, .achievement-card'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
@@ -127,16 +127,10 @@ window.addEventListener('scroll', () => {
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-  btn.style.background = '#28ca41';
-  btn.style.borderColor = '#28ca41';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-    btn.style.background = '';
-    btn.style.borderColor = '';
-    btn.disabled = false;
-    form.reset();
-  }, 3000);
+  const name = form.querySelector('#name').value;
+  const email = form.querySelector('#email').value;
+  const message = form.querySelector('#message').value;
+  const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+  window.location.href = `mailto:desainishant96@gmail.com?subject=${subject}&body=${body}`;
 });
