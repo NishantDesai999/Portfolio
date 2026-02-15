@@ -42,10 +42,10 @@ navLinks.querySelectorAll('a').forEach(link => {
 // =============================================
 const roles = [
   'Senior Software Engineer',
-  'Backend Systems Architect',
+  'Backend & Platform Engineer',
   'Java & Spring Boot Developer',
-  'Team Lead',
-  'Performance Optimizer'
+  'Cost Optimization Expert',
+  'Microservices Architect'
 ];
 
 let roleIndex = 0;
