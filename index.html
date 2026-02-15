@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Desai | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">ND<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Nishant <span class="accent">Desai</span></h1>
+      <p class="hero-title"><span class="typed-text" id="typed"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">I craft clean, performant, and user-centered digital experiences. Passionate about turning ideas into reality through code.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/NishantDesai999" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/nishantdesai999" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nishantdesai999@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">nishant.js</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="fn">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Nishant Desai"</span>,
+  <span class="key">role</span>: <span class="str">"Full Stack Developer"</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+    <span class="str">"TypeScript"</span>, <span class="str">"Python"</span>
+  ],
+  <span class="key">passion</span>: <span class="str">"Building great products"</span>,
+  <span class="key">available</span>: <span class="bool">true</span>
+};</code></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image">
+            <div class="initials-avatar">ND</div>
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-circle-check"></i>
+            <span>Open to opportunities</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a passionate <strong>Full Stack Developer</strong> who loves building elegant solutions to complex problems. With a strong foundation in both frontend and backend technologies, I create seamless digital experiences that make an impact.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or leveling up my problem-solving skills on competitive programming platforms.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Database</h3>
+          <div class="skill-tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-featured e-commerce solution with real-time inventory, payment integration, and an intuitive admin dashboard.</p>
+          <div class="project-tech">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time data visualization dashboard with interactive charts, custom reports, and role-based access control.</p>
+          <div class="project-tech">
+            <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Chart.js</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Chat Application</h3>
+          <p>Real-time messaging app with end-to-end encryption, file sharing, group chats, and video call features.</p>
+          <div class="project-tech">
+            <span>React</span><span>Socket.io</span><span>Express</span><span>Redis</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>AI Task Manager</h3>
+          <p>Smart task management app with AI-powered prioritization, natural language input, and productivity analytics.</p>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>React</span><span>OpenAI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Learning Platform</h3>
+          <p>Online education platform with video courses, interactive quizzes, progress tracking, and certification.</p>
+          <div class="project-tech">
+            <span>Django</span><span>React</span><span>AWS S3</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-map-location-dot"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Travel Planner</h3>
+          <p>AI-powered travel planning app with itinerary generation, budget tracking, and collaborative trip planning.</p>
+          <div class="project-tech">
+            <span>Next.js</span><span>Prisma</span><span>MapBox</span><span>OpenAI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss an idea, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:nishantdesai999@gmail.com">nishantdesai999@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/NishantDesai999" target="_blank" rel="noopener">github.com/NishantDesai999</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/nishantdesai999" target="_blank" rel="noopener">linkedin.com/in/nishantdesai999</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <span class="accent">Nishant Desai</span></p>
+      <p class="footer-sub">© 2025 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
